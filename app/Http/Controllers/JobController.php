@@ -33,6 +33,18 @@ class JobController extends Controller
         return $job;
     }
 
+    public function search(Request $request){
+        $title = $request->input('title');
+        $location = $request->input('location');
+    
+        
+        $jobs = Job::where('title', 'LIKE', "%$title%")
+                      ->where('location', 'LIKE', "%$location%")
+                      ->get();
+
+        return $jobs;
+    }
+
     /**
      * Show the form for creating a new resource.
      */
