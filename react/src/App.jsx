@@ -6,6 +6,7 @@ import { Routes,Route } from 'react-router-dom'
 import Contact from './components/pages/Contact'
 import AllJobs from './components/pages/AllJobs'
 import JobDetail from './components/pages/JobDetail'
+import JobSearch from './components/pages/JobSearch'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,10 @@ function App() {
           </Route>
 
           <Route path='/descripcion-puesto/:jobId' element={<JobDetail/>}>
+
+          </Route>
+
+          <Route path='/puesto' element={<JobSearch/>}>
 
           </Route>
 

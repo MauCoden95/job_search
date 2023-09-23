@@ -19,7 +19,7 @@ const JobCard = (props) => {
       <h2 className="text-xl mt-12">{props.title}</h2>
       <a className='text-blue-950' href="#">{props.company}</a>
       <div className='w-4/5 h-24 grid grid-cols-2 grid-rows-2 gap-4'>
-        <h2 className='bg-gray-700 text-white text-center text-sm leading-10'>&#128205; {props.location}</h2>
+        <h2 className='bg-gray-700 text-white text-center text-sm leading-10'>{props.location}</h2>
         <h2 className='bg-gray-700 text-white text-center leading-10'>{props.salary}</h2>
         <h2 className='bg-gray-700 text-white text-center leading-10'>{props.type}</h2>
         <h2 className='bg-gray-700 text-white text-center leading-10'>{props.area}</h2>

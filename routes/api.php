@@ -29,7 +29,7 @@ Route::controller(JobController::class)->group(function () {
     Route::get('/all-jobs', 'all');
     Route::get('/latest-jobs', 'latest');
     Route::get('/job-detail/{id}', 'jobDetail');
-    Route::post('/jobs-search', 'search');
+    Route::get('/jobs-search/{title}/{location}', 'search');
 });
 
 
