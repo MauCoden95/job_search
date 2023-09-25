@@ -20,9 +20,9 @@ const JobCard = (props) => {
       </div>
       <h2 className="text-xl mt-12">{props.title}</h2>
       {/* <a className='text-blue-950' href="#">{props.company}</a> */}
-      <Link to={`/empresa/${props.company}`} className="text-blue-950">
+      <a href={`/empresa/${props.company}`} className="text-blue-950">
         {props.company}
-      </Link>
+      </a>
       <div className='w-4/5 h-24 grid grid-cols-2 grid-rows-2 gap-4'>
         <h2 className='bg-gray-700 text-white text-center text-sm leading-10'>{props.location}</h2>
         <h2 className='bg-gray-700 text-white text-center leading-10'>{props.salary}</h2>
@@ -30,9 +30,9 @@ const JobCard = (props) => {
         <h2 className='bg-gray-700 text-white text-center leading-10'>{props.area}</h2>
       </div>
 
-      <Link to={`/descripcion-puesto/${jobId}`} className="bg-blue-950 hover:bg-blue-600 text-white px-4 py-2">
+      <a href={`/descripcion-puesto/${jobId}`} className="bg-blue-950 hover:bg-blue-600 text-white px-4 py-2">
         Ver detalles
-      </Link>
+      </a>
 
 
     </div>

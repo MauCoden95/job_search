@@ -31,6 +31,7 @@ Route::controller(JobController::class)->group(function () {
     Route::get('/latest-jobs', 'latest');
     Route::get('/job-detail/{id}', 'jobDetail');
     Route::get('/jobs-search/{title}/{location}', 'search');
+    Route::get('/count-category', 'countCategories');
 });
 
 

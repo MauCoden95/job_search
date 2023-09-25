@@ -47,6 +47,28 @@ class JobController extends Controller
         return $jobs;
     }
 
+    public function countCategories(){
+        $categories = [
+            'Desarrollo',
+            'Datos',
+            'Diseño',
+            'Redes',
+            'Consultoria',
+            'ProjectManager',
+            'Soporte',
+            'Ciberseguridad',
+        ];
+
+        $categoryCounts = [];
+
+        foreach ($categories as $category) {
+            $count = Job::where('area', '=', $category)->count();
+            $categoryCounts[$category] = $count;
+        }
+    
+        return $categoryCounts;
+    }
+
     /**
      * Show the form for creating a new resource.
      */
