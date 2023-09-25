@@ -7,6 +7,7 @@ import Contact from './components/pages/Contact'
 import AllJobs from './components/pages/AllJobs'
 import JobDetail from './components/pages/JobDetail'
 import JobSearch from './components/pages/JobSearch'
+import CompanyDetail from './components/pages/CompanyDetail'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,10 @@ function App() {
           </Route>
 
           <Route path='/descripcion-puesto/:jobId' element={<JobDetail/>}>
+
+          </Route>
+
+          <Route path='/empresa/:company' element={<CompanyDetail/>}>
 
           </Route>
 

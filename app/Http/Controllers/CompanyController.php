@@ -17,6 +17,11 @@ class CompanyController extends Controller
         return $companies;
     }
 
+    public function getCompanyByName($name){
+        $company = Company::where('name', $name)->first();
+
+        return response()->json(['company' => $company],200);
+    }
 
 
     /**

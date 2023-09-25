@@ -22,6 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::controller(CompanyController::class)->group(function () {
     Route::get('/companies', 'index');
+    Route::get('/company/{name}', 'getCompanyByName');
 });
 
 
