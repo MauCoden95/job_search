@@ -10,17 +10,17 @@ const Header = () => {
   return (
     <header className="w-full h-24 bg-blue-950">
         <div className="w-5/6 h-full m-auto flex items-center justify-between text-white">
-            <a href="/" className="text-xl">
+            <a href="/" className="text-base">
                 Job Search 
                 <i className="fas fa-briefcase ml-2"></i>
             </a>
 
-            <nav className="w-3/5 h-full">
+            <nav className="w-2/4 h-full">
                 <ul className="w-full h-full flex items-center justify-between">
-                    <li className="hover:text-blue-300"><a href="/">Inicio</a></li>
-                    <li className="hover:text-blue-300"><a href="">Nosotros</a></li>
-                    <li className="hover:text-blue-300"><a href="/empleos">Todos los empleos</a></li>
-                    <li className="hover:text-blue-300"><a href="/contacto">Contacto</a></li>
+                    <li className="hover:text-blue-300 text-sm"><a href="/">Inicio</a></li>
+                    <li className="hover:text-blue-300 text-sm"><a href="/nosotros">Nosotros</a></li>
+                    <li className="hover:text-blue-300 text-sm"><a href="/empleos">Todos los empleos</a></li>
+                    <li className="hover:text-blue-300 text-sm"><a href="/contacto">Contacto</a></li>
                 </ul>
             </nav>
 

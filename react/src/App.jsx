@@ -9,6 +9,7 @@ import JobDetail from './components/pages/JobDetail'
 import JobSearch from './components/pages/JobSearch'
 import CompanyDetail from './components/pages/CompanyDetail'
 import Category from './components/pages/Category'
+import About from './components/pages/About'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,8 @@ function App() {
     <>
       <Routes>
           <Route path='/' element={<Home/>}></Route>
+
+          <Route path='/nosotros' element={<About/>}></Route>
 
           <Route path='/empleos' element={<AllJobs/>}></Route>
 
