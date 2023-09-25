@@ -69,6 +69,12 @@ class JobController extends Controller
         return $categoryCounts;
     }
 
+    public function listJobsByCategory($category){
+        $jobs = Job::where('area','=',$category)->get();
+
+        return $jobs;
+    }
+
     /**
      * Show the form for creating a new resource.
      */

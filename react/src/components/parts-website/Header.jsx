@@ -12,7 +12,7 @@ const Header = () => {
         <div className="w-5/6 h-full m-auto flex items-center justify-between text-white">
             <a href="/" className="text-xl">
                 Job Search 
-                <i className="fas fa-briefcase"></i>
+                <i className="fas fa-briefcase ml-2"></i>
             </a>
 
             <nav className="w-3/5 h-full">

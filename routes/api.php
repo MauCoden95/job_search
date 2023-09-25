@@ -32,6 +32,7 @@ Route::controller(JobController::class)->group(function () {
     Route::get('/job-detail/{id}', 'jobDetail');
     Route::get('/jobs-search/{title}/{location}', 'search');
     Route::get('/count-category', 'countCategories');
+    Route::get('/jobs-category/{category}', 'listJobsByCategory');
 });
 
 

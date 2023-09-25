@@ -8,6 +8,7 @@ import AllJobs from './components/pages/AllJobs'
 import JobDetail from './components/pages/JobDetail'
 import JobSearch from './components/pages/JobSearch'
 import CompanyDetail from './components/pages/CompanyDetail'
+import Category from './components/pages/Category'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,29 +16,19 @@ function App() {
   return (
     <>
       <Routes>
-          <Route path='/' element={<Home/>}>
+          <Route path='/' element={<Home/>}></Route>
 
-          </Route>
+          <Route path='/empleos' element={<AllJobs/>}></Route>
 
-          <Route path='/empleos' element={<AllJobs/>}>
+          <Route path='/descripcion-puesto/:jobId' element={<JobDetail/>}></Route>
 
-          </Route>
+          <Route path='/empresa/:company' element={<CompanyDetail/>}></Route>
 
-          <Route path='/descripcion-puesto/:jobId' element={<JobDetail/>}>
+          <Route path='/puesto' element={<JobSearch/>}></Route>
 
-          </Route>
+          <Route path='/categoria/:category' element={<Category/>}></Route>
 
-          <Route path='/empresa/:company' element={<CompanyDetail/>}>
-
-          </Route>
-
-          <Route path='/puesto' element={<JobSearch/>}>
-
-          </Route>
-
-          <Route path='/contacto' element={<Contact/>}>
-
-          </Route>
+          <Route path='/contacto' element={<Contact/>}></Route>
       </Routes>
     </>
   )
