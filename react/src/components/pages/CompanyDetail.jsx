@@ -33,6 +33,8 @@ const CompanyDetail = () => {
                             <p className='text-xl my-7'><h2 className='block text-2xl'>Cuil</h2><i class="fas fa-building"></i> {company.cuil}</p>
                             <p className='text-xl my-7'><h2 className='block text-2xl'>Dirección</h2><i class="fas fa-map-marker-alt"></i> {company.address}</p>
                             <p className='text-xl my-7'><h2 className='block text-2xl'>Ciudad</h2><i class="fas fa-city"></i> {company.city}</p>
+                            <p className='text-xl my-7'><h2 className='block text-2xl'>Sitio Web</h2><i class="fas fa-file"></i> {company.website}</p>
+                            <p className='text-xl my-7'><h2 className='block text-2xl'>Email rrhh</h2><i class="fas fa-envelope-square"></i> {company.email}</p>
                         </div>
 
                     </div>

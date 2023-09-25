@@ -43,7 +43,7 @@ const AllJobs = () => {
                     <div className='w-full min-h-0 p-10 bg-gray-300'>
                         {jobsData.map((job) => (
                            <div>
-                                <p className='text-xl my-7 text-blue-900'><h2 className='block text-2xl'>Empresa</h2><i class="fas fa-map-marker-alt"></i> {getCompanyName(job.company_id)}</p>
+                                <a href={`/empresa/${getCompanyName(job.company_id)}`} className='text-xl my-7 text-blue-900'><h2 className='block text-2xl'>Empresa</h2><i class="fas fa-building"></i> {getCompanyName(job.company_id)}</a>
                                 <p className='text-xl my-7'><h2 className='block text-2xl'>Ubicación</h2><i class="fas fa-map-marker-alt"></i> {job.location}</p>
                                 <p className='text-xl my-7'><h2 className='block text-2xl'>Salario</h2><i class="fas fa-money-bill-wave"></i> {job.salary}</p>
                                 <p className='text-xl my-7'><h2 className='block text-2xl'>Modalidad</h2><i class="fas fa-laptop"></i> {job.modality}</p>
