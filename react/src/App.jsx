@@ -10,6 +10,7 @@ import JobSearch from './components/pages/JobSearch'
 import CompanyDetail from './components/pages/CompanyDetail'
 import Category from './components/pages/Category'
 import About from './components/pages/About'
+import JobsByCompany from './components/pages/JobsByCompany'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,8 @@ function App() {
           <Route path='/puesto' element={<JobSearch/>}></Route>
 
           <Route path='/categoria/:category' element={<Category/>}></Route>
+
+          <Route path='/empleos/:id' element={<JobsByCompany/>}></Route>
 
           <Route path='/contacto' element={<Contact/>}></Route>
       </Routes>

@@ -75,6 +75,12 @@ class JobController extends Controller
         return $jobs;
     }
 
+    public function listJobsByCompany($id){
+        $jobs = Job::where('company_id','=',$id)->get();
+
+        return $jobs;
+    }
+
     /**
      * Show the form for creating a new resource.
      */
