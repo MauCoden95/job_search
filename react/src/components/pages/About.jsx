@@ -30,7 +30,7 @@ const About = () => {
                 </div>
 
                 <div className="w-full mb-20">
-                    <h2 className="border-0 border-b border-gray-400 text-2xl pb-2">Por qué elegirnos?</h2>
+                    <h2 className="border-0 border-b border-gray-400 text-2xl pb-2">¿Por qué elegirnos?</h2>
                     <p className="mt-5 text-justify">
                         La respuesta es simple: somos más que un portal de empleos, 
                         somos un aliado en tu éxito profesional en la industria de la 

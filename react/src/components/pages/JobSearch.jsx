@@ -5,6 +5,8 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 import JobCard from '../parts-website/JobCard';
+import Filter from '../parts-website/Filter';
+import Title from '../parts-website/Title';
 
 const JobSearch = () => {
 
@@ -37,7 +39,8 @@ const JobSearch = () => {
             {
                 data.length >= 1 ? (
                     <div>
-                        <h2 class="my-12 text-4xl text-center">Resultados de la búsqueda</h2>
+                         <Title title="Búsqueda" />
+                        <Filter/>
                         <div class="w-4/5 min-h-0 m-auto grid grid-cols-3 gap-6 my-12">
                             {
                                 data.map((item) => (

@@ -4,6 +4,7 @@ import Footer from '../parts-website/Footer';
 import Title from "../parts-website/Title";
 import { useEffect, useState } from 'react';
 import JobCard from '../parts-website/JobCard';
+import Filter from '../parts-website/Filter';
 
 
 const Category = () => {
@@ -32,6 +33,7 @@ const Category = () => {
         <div>
             <Header />
             <Title title={`${urlSplit[4]}`} />
+            <Filter/>
             <section className='w-full min-h-0 mb-10'>
                 {
                     info.length ? (

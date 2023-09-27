@@ -4,6 +4,7 @@ import Header from "../parts-website/Header";
 import Footer from "../parts-website/Footer";
 import Title from "../parts-website/Title";
 import JobCard from '../parts-website/JobCard';
+import Filter from '../parts-website/Filter';
 
 const AllJobs = () => {
 
@@ -31,6 +32,7 @@ const AllJobs = () => {
         <div>
             <Header />
             <Title title="Todos los empleos" />
+            <Filter/>
             <section className='w-full min-h-0 mb-10'>
                 <div className='w-5/6 min-h-0 m-auto mt-5 grid grid-cols-3 gap-4'>
                     {jobsData.map((job) => (
