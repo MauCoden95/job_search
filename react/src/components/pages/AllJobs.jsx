@@ -34,7 +34,7 @@ const AllJobs = () => {
             <Title title="Todos los empleos" />
             <Filter/>
             <section className='w-full min-h-0 mb-10'>
-                <div className='w-5/6 min-h-0 m-auto mt-5 grid grid-cols-3 gap-4'>
+                <div className='w-5/6 min-h-0 m-auto mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
                     {jobsData.map((job) => (
                         <JobCard
                             key={job.id}

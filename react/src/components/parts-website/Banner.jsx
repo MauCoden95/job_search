@@ -30,7 +30,7 @@ const Banner = () => {
     return (
         <section className="relative w-full min-h-0 flex items-center justify-center">
             <img className="absolute w-full h-full z-10" src="http://localhost:8000/img/team.jpg" alt="Banner" />
-            <form onSubmit={handleSubmit} className="w-2/5 h-96 z-40 my-14 bg-white rounded-md flex flex-col items-center justify-evenly">
+            <form onSubmit={handleSubmit} className="w-4/5 sm:w-3/5 md:w-2/5 h-96 z-30 my-14 bg-white rounded-md flex flex-col items-center justify-evenly">
                 <h1 className="text-2xl text-center">Buscá tu nuevo empleo</h1>
                 <input className="block w-4/5 text-lg p-2 bg-gray-300 placeholder-slate-900" type="text" name="title" value={formData.title} onChange={handleInputChange} placeholder="Puesto..." />
                 <input className="block w-4/5 text-lg p-2 bg-gray-300 placeholder-slate-900" type="text" name="location" value={formData.location} onChange={handleInputChange} placeholder="Ciudad..." />

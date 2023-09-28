@@ -17,15 +17,15 @@ const Categories = () => {
   return (
     <section className='w-full min-h-0 mb-10'>
       <h2 className='text-4xl my-8 text-center'>Categorías</h2>
-      <div className='w-5/6 min-h-0 m-auto my-10 grid grid-cols-4 grid-rows-2 gap-4'>
-            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 px-5" href={`/categoria/Desarrollo`}>Programación <span className="block">{categories.Desarrollo} empleos</span></a>
-            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 px-5" href={`/categoria/Datos`}>Datos <span className="block">{categories.Datos} empleos</span></a>
-            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 px-5" href={`/categoria/Diseño`}>Diseño Web <span className="block">{categories.Diseño} empleos</span></a>
-            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 px-5" href={`/categoria/Redes`}>Redes <span className="block">{categories.Redes} empleos</span></a>
-            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 px-5" href={`/categoria/Consultoria`}>Consultoría <span className="block">{categories.Consultoria} empleos</span></a>
-            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 px-5" href={`/categoria/ProjectManager`}>Project Manager <span className="block">{categories.ProjectManager} empleos</span></a>
-            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 px-5" href={`/categoria/Soporte`}>Soporte <span className="block">{categories.Soporte} empleos</span></a>
-            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 px-5" href={`/categoria/Ciberseguridad`}>Ciberseguridad <span className="block">{categories.Ciberseguridad} empleos</span></a>
+      <div className='w-5/6 min-h-0 m-auto my-10 grid grid-cols-2 grid-rows-4 sm:grid-cols-4 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-2 gap-4'>
+            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 flex flex-col items-center" href={`/categoria/Desarrollo`}>Programación <span className="block">{categories.Desarrollo} empleos</span></a>
+            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 flex flex-col items-center" href={`/categoria/Datos`}>Datos <span className="block">{categories.Datos} empleos</span></a>
+            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 flex flex-col items-center" href={`/categoria/Diseño`}>Diseño Web <span className="block">{categories.Diseño} empleos</span></a>
+            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 flex flex-col items-center" href={`/categoria/Redes`}>Redes <span className="block">{categories.Redes} empleos</span></a>
+            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 flex flex-col items-center" href={`/categoria/Consultoria`}>Consultoría <span className="block">{categories.Consultoria} empleos</span></a>
+            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 flex flex-col items-center" href={`/categoria/ProjectManager`}>Project Manager <span className="block">{categories.ProjectManager} empleos</span></a>
+            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 flex flex-col items-center" href={`/categoria/Soporte`}>Soporte <span className="block">{categories.Soporte} empleos</span></a>
+            <a className="bg-blue-950 hover:bg-blue-800 text-center text-white py-2 flex flex-col items-center" href={`/categoria/Ciberseguridad`}>Ciberseguridad <span className="block">{categories.Ciberseguridad} empleos</span></a>
       </div>
     </section>
   )

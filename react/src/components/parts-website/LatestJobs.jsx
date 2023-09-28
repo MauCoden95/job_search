@@ -27,8 +27,8 @@ const LatestJobs = () => {
 
   return (
     <section className='w-full min-h-0 mb-10'>
-      <h2 className='text-4xl my-8 text-center'>Ultimos empleos publicados</h2>
-      <div className='w-5/6 min-h-0 m-auto mt-5 grid grid-cols-3 grid-rows-2 gap-4'>
+      <h2 className='text-2xl md:text-4xl my-8 text-center'>Ultimos empleos publicados</h2>
+      <div className='w-5/6 min-h-0 m-auto mt-5 grid grid-cols-1 grid-rows-6  sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-4'>
         {jobsData.map((job) => (
           <JobCard
             key={job.id}
