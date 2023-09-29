@@ -7,3 +7,39 @@
     font-family: 'Comfortaa';
 }
 
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: -10px 0; 
+  }
+  
+  .slick-dots li {
+    margin: 0 5px; 
+  }
+  
+  .slick-dots li button {
+    width: 20px; 
+    height: 20px; 
+    background-color: #ccc; 
+    border: none; 
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;  
+    z-index: 1000;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #007bff; 
+  }
+
+  .info-slider{
+    height: 30rem;
+  }
+
+  .info-slider > div > img{
+    background-size: cover;
+  }
+  
