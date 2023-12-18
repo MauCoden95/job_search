@@ -8,12 +8,12 @@ const Header = () => {
     const btnText = "text-blue-950";
     const hover = "hover:text-white hover:bg-blue-950 hover:border-white";
 
-    const [visible,setVisible] = useState('hidden');
+    const [visible, setVisible] = useState('hidden');
 
     const changeVisibility = () => {
         if (visible == 'hidden') {
             setVisible('block');
-        }else{
+        } else {
             setVisible('hidden');
         }
     }
@@ -37,7 +37,9 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                <Button name={btn} color={btnColor} text={btnText} over={hover} />
+                <a href="http://127.0.0.1:8000/login" className={`cursor-pointer block text-sm px-6 py-2 border-2 rounded-sm hover:text-blue-800 hover:bg-white`}>
+                    Login
+                </a>
             </div>
         </header>
     )
