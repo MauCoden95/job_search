@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ asset('js/main.js') }}" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
     tailwind.config = {
@@ -33,13 +34,54 @@
     </header>
 
     <section class="w-2/5 h-16 p-1 bg-gray-300 m-auto my-10 rounded-full flex">
-        <button class="w-2/4 h-full hover:bg-gray-500 transition cursor-pointer rounded-s-full">Login candidato</button>
-        <button class="w-2/4 h-full hover:bg-gray-500 transition cursor-pointer rounded-e-full">Login empresa</button>
+        <button id="btnCandidate" class="w-2/4 h-full bg-gray-500 transition cursor-pointer rounded-s-full">Login candidato</button>
+        <button id="btnCompany" class="w-2/4 h-full transition cursor-pointer rounded-e-full">Login empresa</button>
     </section>
 
     <section class="w-full min-h-0">
-        <div class="w-5/6 h-full m-auto py-5 text-white flex items-center justify-evenly">
+        <div id="login-candidate" class="block w-5/6 h-full m-auto py-5 text-white flex items-center justify-evenly">
               <img class="w-2/5" src="/img/programmer.png" alt="Programador">
+              <form class="w-2/5" method="POST" action="{{ route('login') }}">
+                @csrf
+                
+
+                <!-- Email Address -->
+                <div>
+                    <x-input-label class="text-lg" for="email" :value="__('Correo Electrónico')" />
+                    <x-text-input id="email" class="block border-2 border-black mt-1 w-full p-2 text-black" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                </div>
+
+                <!-- Password -->
+                <div class="mt-4">
+                    <x-input-label class="text-lg" for="password" :value="__('Contraseña')" />
+
+                    <x-text-input id="password" class="block border-2 border-black mt-1 w-full p-2 text-black"
+                                    type="password"
+                                    name="password"
+                                    required autocomplete="current-password" />
+
+                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                </div>
+
+               
+
+                <div class="flex items-center justify-end mt-4">
+                    @if (Route::has('password.request'))
+                        <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                            {{ __('Olvidó su contraseña?') }}
+                        </a>
+                    @endif
+
+                    <x-primary-button class="ms-3">
+                        {{ __('Ingresar') }}
+                    </x-primary-button>
+                </div>
+            </form>
+        </div>
+
+        <div id="login-company" class="hidden w-5/6 h-full m-auto py-5 text-white flex items-center justify-evenly">
+              <img class="w-2/5" src="/img/company.png" alt="Programador">
               <form class="w-2/5" method="POST" action="{{ route('login') }}">
                 @csrf
 
